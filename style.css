@@ -1,96 +1,97 @@
-.topnav{
-    overflow: hidden;
-    background-color: #333;
-    padding: 3px;
-}
-
-.topnav a{
-    padding: 17px 23px;
-    color: white;
-    text-align: center;
-    display: block;
-    float: left;
-    text-decoration: none;
-}
-
-.topnav a:hover{
-    background-color: #ddd;
-    color: black;
-}
-
-#principal{
-    background-image: url("img/advocacia.png");
-    background-size: 100%;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    margin-left: 0%;
-    margin-right: 0%;
-}
-
-#coluna1-principal{
-    float: left;
-    width: 45%;
-    background-color: rgba(235, 235, 235, 0.418);
-    padding: 4%;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
     text-align: left;
 }
-#coluna2-principal{
-    float: right;
-    width: 55%;
-}
 
-#area{
-    background-color: #fffbfb;
-}
-
-.card img{
-    opacity: 0.3;
-}
-
-.card:hover {
-    -webkit-box-shadow: -1px 9px 40px rgba(0,0,0,0.75);
-    -moz-box-sadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
-    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
-}
-
-#quem-somos{
+body{
     width: 100%;
-    padding: 6%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: slateblue;
 }
 
-.mapa{
-    float: right;
-    width: 50%;
-    padding: 4%;
+div.container{
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    padding: 15px 2%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 
-.e-mail-contato{
-    float: left;
-    width: 50%;
-    padding: 4%;
-}
-
-.map-container-3{
-    overflow:hidden;
-    padding-bottom:80%;
-    position:relative;
-    height:0;
-}
-
-.map-container-3 iframe {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-
-.footer{
-    background-color: #3f3838;
-    padding: 10px;
+div.container h1{
+    font-size: 22px;
+    color: rgb(60, 60, 60);
     text-align: center;
+    font-weight: lighter;
+    padding-top: 5px;
+}
+
+div.container input{
+    width: 100%;
+    max-width: 50px;
+    font-size: 16px;
+    padding: 5px 5px;
+    text-align: center;
+    outline: 0;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 5px;
+    color: rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+div.container select{
+    margin-top: 10px;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: rgb(80, 80, 80);
+    border: 1px solid rgb(100, 100, 100);
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
+}
+
+div.container input:focus{
+    border: 1px solid slateblue;
+}
+
+div.container select:focus{
+    border: 1px solid slateblue;
+}
+
+div.tabuada{
+    width: 100%;
+    text-align: center;
+    color: rgb(80, 80, 80);
+    font-size: 16px;
+    line-height: 32px;
+    margin: 15px 0;
+}
+
+div.tabuada p{
+    text-align: center;
+}
+
+div.container button{
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(147, 136, 224);
+    cursor: pointer;   
     color: white;
 }
+
+div.container input::-webkit-inner-spin-button {
+    display: none;
+}
+
+
 
