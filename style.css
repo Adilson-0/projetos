@@ -11,7 +11,7 @@ body{
     min-height: 100vh;
     display: grid;
     place-items: center;
-    background-color: slateblue;
+    background-color: rgb(243, 171, 77);
 }
 
 div.container{
@@ -23,7 +23,6 @@ div.container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 div.container h1{
@@ -59,11 +58,11 @@ div.container select{
 }
 
 div.container input:focus{
-    border: 1px solid slateblue;
+    border: 1px solid rgb(243, 171, 77);
 }
 
 div.container select:focus{
-    border: 1px solid slateblue;
+    border: 1px solid rgb(243, 171, 77);
 }
 
 div.tabuada{
@@ -81,10 +80,11 @@ div.tabuada p{
 
 div.container button{
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 18px;
     border: 0;
     border-radius: 5px;
-    background-color: rgb(147, 136, 224);
+    background-color: rgb(255 97 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;   
     color: white;
 }
@@ -93,5 +93,10 @@ div.container input::-webkit-inner-spin-button {
     display: none;
 }
 
-
+#calc_ic{
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
